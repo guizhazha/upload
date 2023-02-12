@@ -1,0 +1,28 @@
+@import "./base/color.scss";
+
+@mixin dark-bright-background-color {
+    [data-theme="dark"] & {
+        background-color: map-get($text-color, dark);
+    }
+    [data-theme="bright"] & {
+        background-color: map-get($text-color, bright);
+    }
+}
+
+@mixin dark-bright-color {
+    [data-theme="dark"] & {
+        color: map-get($text-color, dark);
+    }
+    [data-theme="bright"] & {
+        color: map-get($text-color, bright);
+    }
+}
+
+@mixin dark-bright-reverse-color {
+    [data-theme="dark"] & {
+        color: map-get($text-color, bright);
+    }
+    [data-theme="bright"] & {
+        color: map-get($text-color, dark);
+    }
+}

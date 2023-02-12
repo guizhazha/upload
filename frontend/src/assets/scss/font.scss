@@ -1,0 +1,51 @@
+$font-size: (
+    size-1: 4px,
+    size-2: 8px,
+    size-3: 12px,
+    size-4: 16px,
+    size-5: 24px,
+    size-6: 32px,
+    size-7: 48px,
+    size-8: 64px,
+    size-9: 96px,
+    size-10: 128px,
+    size-11: 192px,
+    size-12: 256px,
+    size-13: 384px,
+    size-14: 512px,
+    size-15: 640px,
+    size-16: 768px,
+);
+
+$font-weight: (
+    weight-1: 100,
+    weight-2: 200,
+    weight-3: 300,
+    weight-4: 400,
+    weight-5: 500,
+    weight-6: 600,
+    weight-7: 700,
+    weight-8: 800,
+    weight-9: 900,
+);
+
+$font-family: (
+    // 宋体
+    family-1: 'SimSun',
+    // 微软雅黑
+    family-2: 'Microsoft Yahei',
+    // 西文衬线字体
+    family-3: 'Times New Roman',
+    // 草书字体
+    family-4: 'cursive',
+    // 艺术效果字体
+    family-5: 'fantasy',
+    // 等宽字体
+    family-6: 'monospace',
+);
+
+@mixin font($size, $weight, $family) {
+    font-size: map-get($font-size,$size);
+    font-weight: map-get($font-weight, $weight);
+    font-family: map-get($font-family, $family);
+}

@@ -1,0 +1,21 @@
+@import "./base/size.scss";
+@import "./base/color.scss";
+@import "./dark-bright-color.scss";  
+
+::v-deep h2, ::v-deep h3 {
+	@include dark-bright-reverse-color;
+}
+::v-deep h2 {
+	margin: map-get($length, size-3);
+}
+::v-deep h3 {
+	margin: map-get($length, size-1) 0;
+	margin-left: map-get($length, size-6);
+}
+::v-deep .el-input {
+	display: inline;
+}
+::v-deep .el-icon{
+	font-size: map-get($length, size-5);
+	color: map-get($main-color, main);
+}

@@ -1,0 +1,26 @@
+// 背景主色：蓝色
+
+$hue: 240;
+$saturation: 40%;
+$lightness: 30%;
+
+$main-color: (
+    main: hsl($hue, $saturation, $lightness),
+    header: hsl($hue - 20, $saturation - 0.05, $lightness),
+    icon: hsl($hue - 40, $saturation - 0.10, $lightness),
+);
+// show-data: hsl(calc(360 - $hue), calc(100% - $saturation), calc(100% - $lightness)),
+
+// 邻居
+$around-color-blue: (
+    one: #97a5e6,
+    two: #d3d4c6,
+    three: #FFFADE,
+    four: #E8D5B5,
+);
+
+// 字体主色
+$text-color: (
+    dark: #000000,
+    bright: #FFFFFF,
+);

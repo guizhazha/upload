@@ -1,0 +1,24 @@
+@import "./base/size.scss";
+@import "./base/color.scss";
+@import "./dark-bright-color.scss";   
+@import "./h.scss"; 
+
+.el-collapse {
+	width: $data-show-width;
+	height: calc(100vh - $upload-height - $header-height);
+	border: none;
+	
+	::v-deep .el-collapse-item__header {
+		background-color: map-get($main-color, icon);
+		height: $header-height;
+		// 多余文字不换行并且不显示
+		overflow: hidden;
+		white-space: nowrap;
+
+		border: none;
+        font-weight: 600;
+        font-size: map-get($length, size-4);
+        @include dark-bright-color;
+	}
+}
+

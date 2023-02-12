@@ -1,0 +1,25 @@
+@keyframes left-2-right {
+    0% {
+        transform: translateX(-800px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes ani {
+    from {
+        mask-position: 0 0;
+    }
+    to {
+        mask-position: 100% 0;
+    }
+}
+@keyframes ani2 {
+    from {
+        mask-position: 100% 0;
+    }
+    to {
+        mask-position: 0 0;
+    }
+}

@@ -1,0 +1,19 @@
+@import "./base/size.scss";
+@import "./base/color.scss";
+
+::v-deep .el-upload-dragger {
+    height: $upload-height;
+    padding: map-get($length, size-1);
+
+    .el-icon {
+        font-size: map-get($length, size-8);
+        color: map-get($main-color, icon);
+    }
+
+    h2, h3, h5, h6 {
+        margin: map-get($length, size-1);
+    }
+    h2 {
+        margin-top: map-get($length, size-6);
+    }
+}

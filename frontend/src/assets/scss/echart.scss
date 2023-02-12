@@ -1,0 +1,6 @@
+@import "@/assets/scss/base/size.scss";
+
+[id^='echart'] {
+    width: map-get($length, size-13);
+    height: map-get($length, size-12);
+}

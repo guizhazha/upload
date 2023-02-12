@@ -1,0 +1,21 @@
+@import "@/assets/scss/base/size.scss";
+
+@mixin button-fold {
+    .el-button {
+        height: $header-height * 0.8;
+        width: $header-height * 1.2;
+        margin: 0 map-get($length, size-2);
+
+        ::v-deep .el-icon {
+            font-size: map-get($length, size-5);
+        }
+    }
+}
+
+@mixin button-circle {
+    .el-button {
+        height: $header-height * 0.6;
+        width: $header-height * 0.6;
+        margin: 0 map-get($length, size-2);
+    }
+}

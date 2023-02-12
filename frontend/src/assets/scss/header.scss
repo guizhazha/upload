@@ -1,0 +1,25 @@
+@import "./base/size.scss";
+@import "./base/color.scss";
+@import "./dark-bright-color.scss";
+
+.el-row {
+    background-color: map-get($main-color, header);
+
+    .left {
+        display: flex;
+        align-items: center;
+    }
+
+    .right {
+        display: flex;
+        justify-content: flex-end;
+        margin-left: auto;
+        align-items: center;
+    }
+}
+.el-row {
+    height: $header-height;
+}
+span {
+    @include dark-bright-color;
+}

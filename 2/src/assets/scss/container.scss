@@ -1,0 +1,11 @@
+@import "./base/size.scss";
+
+.el-header {
+    height: $upload-height;
+}
+.el-main {
+	padding: 0;
+}
+.el-aside {
+    width: $data-show-width;
+}
